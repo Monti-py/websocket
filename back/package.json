@@ -1,0 +1,33 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Tarea 5 de produccion",
+  "main": "index.js",
+  "scripts": {
+    "pio": "nodemon --env-file=.pio.env index.js",
+    "home": "nodemon --env-file=.home.env index.js",
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monti-py/Produ-tarea-5.git"
+  },
+  "keywords": [
+    "ES"
+  ],
+  "author": "B. Cogorno && F. Montivero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Monti-py/Produ-tarea-5/"
+  },
+  "homepage": "https://github.com/Monti-py/Produ-tarea-5#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1"
+  }
+}
