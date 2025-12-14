@@ -57,7 +57,6 @@ A PARTIR DE ACÁ LOS EVENTOS DEL SOCKET
 A PARTIR DE ACÁ LOS EVENTOS DEL SOCKET
 A PARTIR DE ACÁ LOS EVENTOS DEL SOCKET
 */
-
 io.on("connection", (socket) => {
     const req = socket.request;
     socket.on("joinRoom", (data) => {
@@ -83,9 +82,6 @@ io.on("connection", (socket) => {
         });
        
     }); 
-    socket.on("emitiendo", ()=>{
-        io.emit("reenviando", { event: "reenviando", message: "we did it" });
-    })
     socket.on("disconnect", () => {
         console.log("Disconnect");
     });
